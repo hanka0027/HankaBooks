@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Transaksi</title>
+    <link rel="stylesheet" href="css/transaksi.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Bagian Navigasi -->
+      <nav>
+        <img src="img/farhan_books.jpg" alt="Contoh Logo" />
+        <h1 id="judul-aplikasi-perpustakaan">Aplikasi Perpustakaan</h1>
+        <ul>
+          <li>
+            <a href="beranda.html">Beranda</a>
+          </li>
+          <li>
+            <a href="transaksi.html">Transaksi</a>
+          </li>
+          <li>
+            <a href="profil.html">Profil</a>
+          </li>
+          <li>
+            <a href="login.html">Log Out</a>
+          </li>
+          <li>
+            <a href="aplikasi_perpustakaan.html">Produk Kami</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Akhir dari Navigasi -->
+
+      <h1 id="judul-halaman-transaksi">Halaman Transaksi</h1>
+
+      <!-- Formulir Transaksi -->
+      <form action="daftar_transaksi.html" method="post" id="daftar_transaksi">
+        <ul>
+          <li>
+            <label for="nama_buku">Nama Buku</label>
+            <input type="text" name="nama_buku" id="nama_buku" name="nama_buku" required />
+          </li>
+          <li>
+            <label for="jumlah_buku">Jumlah Buku</label>
+            <input type="number" name="jumlah_buku" id="jumlah_buku" name="jumlah_buku" required />
+          </li>
+          <li>
+            <label for="kategori_buku">Kategori Buku</label>
+            <select id="kategori_buku" name="kategori_buku" form="halaman_transaksi" required>
+              <option value="novel">Novel</option>
+              <option value="buku_pelajaran">Buku Pelajaran</option>
+              <option value="ensiklopedia">Ensiklopedia</option>
+              <option value="atlas">Atlas</option>
+              <option value="komik">Komik</option>
+              <option value="religi">Religi</option>
+              <option value="hukum">Hukum</option>
+              <option value="ilmu_sosial">Ilmu Sosial</option>
+              <option value="matematika_dan_teknik">Matematika dan Teknik</option>
+              <option value="kedokteran">Kedokteran</option>
+              <option value="biologi">Biologi</option>
+              <option value="masakan">Masakan</option>
+              <option value="majalah">Majalah</option>
+              <option value="pengembangan_diri">Pengembangan Diri</option>
+              <option value="biografi">Biografi</option>
+            </select>
+          </li>
+          <li>
+            <button type="submit">Simpan</button>
+          </li>
+        </ul>
+      </form>
+      <!-- Akhir dari Formulir -->
+
+      <!-- Bagian Footer -->
+      <footer>
+        <p>Copyright &copy; | <a href="https://instagram.com/mhmmdfaarhan/">Muhammad Farhan</a></p>
+      </footer>
+      <!-- Akhir dari Footer -->
+    </div>
+
+    <script src="js/transaksi.js"></script>
+  </body>
+</html>

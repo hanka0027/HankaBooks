@@ -1,0 +1,174 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+#container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+/* Header and Navigation */
+header {
+  background-color: #007bff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.text-box {
+  margin: 1.25rem 2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h1 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.text-box p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.text-box ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+
+.text-box ul li {
+  margin-bottom: 10px;
+}
+
+.text-box ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text-box ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  margin-top: 15rem;
+  padding: 2.5rem;
+}
+
+footer :where(p, a) {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav img {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-box p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav img {
+    width: 30px;
+    height: 30px;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .text-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .text-box p {
+    font-size: 0.9rem;
+  }
+}

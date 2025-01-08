@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* #container {
+  margin: 0 auto;
+} */
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header h2 {
+  margin: 10px 0 5px;
+  font-size: 1.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#text-box {
+  padding: 2rem;
+  margin: 1.25rem 2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.founder {
+  text-align: center;
+}
+
+.paragraf {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  margin-top: 15rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 2.5rem;
+}
+
+footer :where(p, a) {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #container {
+    padding: 10px;
+  }
+
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav img {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 60px;
+    height: 60px;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  nav img {
+    width: 30px;
+    height: 30px;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

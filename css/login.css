@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+#box {
+  padding-bottom: 3rem;
+}
+
+/* Styling untuk formulir */
+form {
+  max-width: 400px; /* Batas lebar form */
+  margin: 20px auto; /* Centering form */
+  padding: 20px;
+  background-color: #f9f9f9; /* Warna latar */
+  border: 1px solid #ddd; /* Border ringan */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Styling untuk judul form */
+form h1 {
+  font-size: 1.8rem; /* Ukuran teks judul */
+  color: #4caf50; /* Warna hijau */
+  text-align: center; /* Pusatkan teks */
+  margin-bottom: 20px; /* Jarak ke bawah */
+}
+
+/* Styling daftar dan elemen */
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form ul li {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50; /* Warna hijau */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049; /* Hijau lebih gelap saat hover */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+
+  form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  form label {
+    font-size: 0.9rem;
+  }
+
+  form input[type="text"],
+  form input[type="password"],
+  form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Bagian Footer */
+footer {
+  margin-top: 15rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 2.5rem;
+}
+
+footer :where(p, a) {
+  color: white;
+  text-align: center;
+}
+/* Akhir dari Footer */

@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Styling dasar untuk navigasi */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+}
+
+nav img {
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Menu navigasi */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Warna hover (emas) */
+}
+
+#text-box {
+  padding: 2rem;
+  margin: 1.25rem 2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#text-box h1 {
+  margin-bottom: 0.75rem;
+}
+
+#text-box ul {
+  padding: 1rem 0 0 1.5rem;
+}
+
+#text-box li {
+  list-style-type: number;
+  line-height: 3rem;
+}
+
+#text-box ul li img {
+  width: 50%;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+  }
+}
+
+/* Bagian Footer */
+footer {
+  background-color: #007bff;
+  margin-top: 15rem;
+  padding: 2.5rem;
+}
+
+footer :where(p, a) {
+  color: white;
+  text-align: center;
+}
+/* Akhir dari Footer */

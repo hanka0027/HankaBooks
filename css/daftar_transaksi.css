@@ -1,0 +1,106 @@
+/* Reset dasar */
+body,
+h1,
+a,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya umum */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  font-size: 1rem;
+}
+
+td[colspan="3"] {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
